@@ -1,0 +1,65 @@
+@import url("https://fonts.googleapis.com/css2?family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&display=swap");
+@import "tailwindcss";
+
+@theme {
+  --color-cyan-600: #4d96a9;
+  --color-cyan-300: #8fe3f9;
+  --color-cyan-hover: #71c0d4;
+  --color-purple-600: #855fb1;
+  --color-purple-300: #d9b8ff;
+  --color-purple-hover: #b18bdd;
+  --color-slate-900: #28283d;
+  --color-slate-600: #87879d;
+  --color-slate-300: #d1d1df;
+  --color-white: #fafafa;
+}
+
+@layer base {
+  :root {
+    --font-redhat: "Red Hat Displey", sans-serif;
+  }
+
+  body {
+    font-family: var(--font-redhat);
+    color: var(--color-slate-900);
+  }
+}
+
+.text-preset-1 {
+  @apply text-[64px] leading-[110%] tracking-normal;
+}
+
+.text-preset-2 {
+  @apply text-[40px] leading-[110%] tracking-normal;
+}
+
+.text-preset-3 {
+  @apply text-[16px] leading-[110%] tracking-[4px] text-cyan-600 uppercase;
+}
+
+.text-preset-4 {
+  @apply text-lg font-medium leading-[110%] tracking-normal;
+}
+
+.text-preset-5 {
+  @apply text-[16px] leading-[150%] tracking-normal;
+}
+
+:root {
+  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 900;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  margin: 0;
+  display: flex;
+  place-items: center;
+  min-width: 320px;
+  min-height: 100vh;
+}
